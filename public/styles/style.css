@@ -6,12 +6,6 @@
     --font-family-primary: 'Poppins', sans-serif;
 }
 
-body, header {
-    margin: 1%;
-    padding: 0;
-    border: 0;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -20,11 +14,11 @@ body {
     font-family: var(--font-family-primary);
     color: var(--color-primary)
 }
+
 /**** NAV ****/
 .nav__header {
     display: flex;
     flex-direction: row;
-    border: 1px solid white;
 }
 
 .nav__header .nav__logo{
