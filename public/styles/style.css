@@ -15,6 +15,11 @@ body {
     color: var(--color-primary)
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 /**** NAV ****/
 .nav__header {
     display: flex;
@@ -45,7 +50,15 @@ body {
     list-style: none;
 }
 
-.nav__header .nav__list .nav__item a {
+.nav__header .nav__list .nav__item .nav__link {
     color: var(--color-primary);
     text-decoration: none;
+}
+
+/**** SECTION ****/
+
+#about, #projects, #contact {
+    border: 1px solid white;
+    min-height: 100vh;
+    padding: 1em;
 }
