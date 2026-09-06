@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevQuiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="quiz-navbar" aria-label="Navigation du quiz">
+      <div class="brand-block">
+        <span class="brand-mark">D</span>
+        <span class="brand-name">DevQuiz</span>
+      </div>
+
+      <div class="nav-actions">
+        <button id="navLoginBtn" class="nav-btn nav-btn--ghost" type="button">Se connecter</button>
+        <button id="navRegisterBtn" class="nav-btn nav-btn--primary" type="button">S'inscrire</button>
+        <button id="navUserBadge" class="user-badge" type="button" hidden>
+          <span>Profil</span>
+          <strong id="navUserName">Invité</strong>
+        </button>
+      </div>
+    </nav>
+
+    <div id="authModal" class="auth-modal" aria-hidden="true">
+      <div class="auth-modal__backdrop" data-close="true"></div>
+      <div class="auth-modal__panel" aria-labelledby="authModalTitle">
+        <button id="closeAuthModal" class="auth-modal__close" type="button" aria-label="Fermer">×</button>
+        <p class="screen-kicker">Compte</p>
+        <h3 id="authModalTitle">Connexion</h3>
+
+        <div class="auth-header">
+          <span>Compte</span>
+          <strong id="authStatus">Invité</strong>
+        </div>
+
+        <div class="auth-fields">
+          <label class="username-field" for="registerName">
+            <span>Nom</span>
+            <input id="registerName" name="registerName" type="text" maxlength="30" placeholder="Ex : Thomas" />
+          </label>
+
+          <label class="username-field" for="registerEmail">
+            <span>Email</span>
+            <input id="registerEmail" name="registerEmail" type="email" maxlength="80" placeholder="Ex : thomas@email.com" />
+          </label>
+
+          <label class="username-field" for="registerPassword">
+            <span>Mot de passe</span>
+            <input id="registerPassword" name="registerPassword" type="password" maxlength="50" placeholder="Votre mot de passe" />
+          </label>
+        </div>
+
+        <div class="auth-actions">
+          <button id="registerBtn" class="secondary-btn" type="button">S'inscrire</button>
+          <button id="loginBtn" class="secondary-btn" type="button">Se connecter</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="profileModal" class="profile-modal" aria-hidden="true">
+      <div class="profile-modal__backdrop" data-close-profile="true"></div>
+      <div class="profile-modal__panel">
+        <button id="closeProfileModal" class="auth-modal__close" type="button" aria-label="Fermer le profil">×</button>
+        <p class="screen-kicker">Profil</p>
+        <h3>Votre espace</h3>
+
+        <div class="profile-panel">
+          <div class="profile-header">
+            <span class="profile-label">Utilisateur</span>
+            <strong id="profileUsername">-</strong>
+          </div>
+
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <span>Niveau</span>
+              <strong id="profileLevel">Débutant</strong>
+            </div>
+            <div class="profile-stat">
+              <span>Score max</span>
+              <strong id="profileBestScore">0</strong>
+            </div>
+          </div>
+
+          <div class="profile-unlocks">
+            <span>Débloqués</span>
+            <div id="profileUnlockedLevels" class="unlocked-levels"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="quiz-shell">
+      <section class="quiz-card" aria-live="polite">
+        <div class="quiz-header">
+          <div>
+            <p class="eyebrow">Quiz web</p>
+            <h1>DevQuiz</h1>
+          </div>
+          <div class="score-pill">
+            <span>Score</span>
+            <strong id="scoreValue">0</strong>
+          </div>
+        </div>
+
+        <div id="startScreen" class="screen visible">
+          <div class="screen-content">
+            <p class="screen-kicker">Teste tes connaissances</p>
+            <h2>Choisis une catégorie</h2>
+            <p>
+              Sélectionne un domaine puis un niveau pour lancer un quiz précis sur HTML, CSS ou JavaScript.
+            </p>
+
+            <div class="category-grid" aria-label="Catégories de quiz">
+              <button class="category-btn active" data-category="html" type="button" aria-pressed="true">HTML</button>
+              <button class="category-btn" data-category="css" type="button" aria-pressed="false">CSS</button>
+              <button class="category-btn" data-category="javascript" type="button" aria-pressed="false">JavaScript</button>
+            </div>
+
+            <div class="version-grid" aria-label="Niveaux de difficulté">
+              <button class="version-btn active" data-version="debutant" type="button" aria-pressed="true">Débutant</button>
+              <button class="version-btn" data-version="intermediaire" type="button" aria-pressed="false">Intermédiaire</button>
+              <button class="version-btn" data-version="avance" type="button" aria-pressed="false">Avancé</button>
+            </div>
+
+            <button id="startBtn" class="primary-btn" type="button">Commencer</button>
+          </div>
+        </div>
+
+        <div id="quizScreen" class="screen">
+          <div class="progress-wrap">
+            <div class="progress-bar">
+              <span id="progressFill"></span>
+            </div>
+            <span id="questionCounter" class="progress-text">Question 1 / 5</span>
+          </div>
+
+          <div class="question-box">
+            <p id="questionText" class="question-text"></p>
+          </div>
+
+          <div id="answers" class="answers" aria-label="Réponses possibles"></div>
+
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+
+          <div class="actions">
+            <button id="nextBtn" class="secondary-btn" type="button" disabled>Question suivante</button>
+          </div>
+        </div>
+
+        <div id="resultScreen" class="screen">
+          <div class="screen-content result-content">
+            <p class="screen-kicker">Résultat final</p>
+            <h2 id="resultTitle">Bravo !</h2>
+            <p id="resultText"></p>
+            <div id="mistakesList" class="mistakes-list" aria-live="polite"></div>
+            <div class="result-actions">
+              <button id="menuBtn" class="secondary-btn" type="button">Menu</button>
+              <button id="restartBtn" class="primary-btn" type="button">Rejouer</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

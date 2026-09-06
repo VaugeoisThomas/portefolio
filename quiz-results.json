@@ -1,0 +1,96 @@
+[
+  {
+    "id": "1788099081452c848457906fa8",
+    "username": "Test",
+    "category": "html",
+    "version": "debutant",
+    "score": 3,
+    "total": 3,
+    "mistakes": [],
+    "summary": "Test a obtenu 3/3 en Html - Débutant.",
+    "createdAt": "2026-08-30T14:11:21.453Z"
+  },
+  {
+    "id": "871641fe-b446-4fba-a109-998373498a89",
+    "username": "Thomas",
+    "category": "html",
+    "version": "debutant",
+    "score": 3,
+    "total": 3,
+    "mistakes": [],
+    "summary": "Thomas a obtenu 3/3 en Html - Débutant.",
+    "createdAt": "2026-08-30T15:03:24.059Z"
+  },
+  {
+    "id": "a0facccf-71a1-46d3-a64f-be0182b6bf11",
+    "username": "Thomas",
+    "category": "html",
+    "version": "intermediaire",
+    "score": 4,
+    "total": 5,
+    "mistakes": [
+      {
+        "question": "Quel attribut sert à indiquer le chemin de la ressource d’une image ?",
+        "correctAnswer": "src",
+        "explanation": "Le bon élément est src. Il correspond à la structure attendue pour ce type de contenu HTML."
+      }
+    ],
+    "summary": "Thomas a obtenu 4/5 en Html - Intermédiaire.",
+    "createdAt": "2026-08-30T15:03:54.509Z"
+  },
+  {
+    "id": "3931b1cf-5b4d-4eb2-8d29-723d29ff63c5",
+    "username": "Thomas",
+    "category": "html",
+    "version": "debutant",
+    "score": 5,
+    "total": 5,
+    "mistakes": [],
+    "summary": "Thomas a obtenu 5/5 en Html - Débutant.",
+    "createdAt": "2026-08-30T15:06:59.404Z"
+  },
+  {
+    "id": "dd38fee6-4463-401f-8afc-8542d05950d6",
+    "username": "Thomas",
+    "category": "html",
+    "version": "intermediaire",
+    "score": 4,
+    "total": 6,
+    "mistakes": [
+      {
+        "question": "Quel attribut est utilisé pour indiquer le chemin d’une image ?",
+        "correctAnswer": "src",
+        "explanation": "Le bon élément est src. Il correspond à la structure attendue pour ce type de contenu HTML."
+      },
+      {
+        "question": "Quel attribut permet de rendre un élément accessible par le lecteur d’écran ?",
+        "correctAnswer": "aria-label",
+        "explanation": "Le bon élément est aria-label. Il correspond à la structure attendue pour ce type de contenu HTML."
+      }
+    ],
+    "summary": "Thomas a obtenu 4/6 en Html - Intermédiaire.",
+    "createdAt": "2026-08-30T15:07:48.366Z"
+  },
+  {
+    "id": "dc2bd08b-0bed-401e-af4f-e30e64290283",
+    "username": "Thomas",
+    "category": "html",
+    "version": "avance",
+    "score": 5,
+    "total": 7,
+    "mistakes": [
+      {
+        "question": "Quelle balise permet d’intégrer un contenu multimédia avec une alternative textuelle ?",
+        "correctAnswer": "<figure>",
+        "explanation": "Le bon élément est <figure>. Il correspond à la structure attendue pour ce type de contenu HTML."
+      },
+      {
+        "question": "Quel élément HTML est le plus adapté pour afficher une citation ou un extrait de texte notable ?",
+        "correctAnswer": "<blockquote>",
+        "explanation": "Le bon élément est <blockquote>. Il correspond à la structure attendue pour ce type de contenu HTML."
+      }
+    ],
+    "summary": "Thomas a obtenu 5/7 en Html - Avancé.",
+    "createdAt": "2026-08-30T15:14:08.224Z"
+  }
+]

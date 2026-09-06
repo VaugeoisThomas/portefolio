@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="title-wrap">
+          <p class="eyebrow">Gestionnaire de tâches</p>
+          <h1>TaskFlow</h1>
+        </div>
+
+        <div class="header-actions">
+          <button class="ghost-button" id="clearCompletedBtn" type="button" aria-label="Supprimer les tâches terminées">
+            <span class="button-icon" aria-hidden="true">✅</span>
+            <span class="button-label">Finis</span>
+          </button>
+
+          <button class="ghost-button danger" id="clearAllBtn" type="button" aria-label="Supprimer toutes les tâches">
+            <span class="button-icon" aria-hidden="true">🗑️</span>
+            <span class="button-label">Tout</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="card">
+        <form id="todoForm" class="todo-form">
+          <label class="sr-only" for="taskInput">Ajouter une tâche</label>
+          <input
+            id="taskInput"
+            type="text"
+            maxlength="120"
+            placeholder="Ajouter une tâche..."
+            autocomplete="off"
+            aria-describedby="taskError"
+          />
+          <button type="submit" class="primary-button" aria-label="Ajouter une tâche">
+            <span class="button-icon" aria-hidden="true">＋</span>
+          </button>
+        </form>
+
+        <div id="taskError" class="task-error" aria-live="polite"></div>
+
+        <div class="toolbar">
+          <div class="stats" aria-live="polite">
+            <span id="taskCount">0 tâche</span>
+            <span id="remainingCount">0 restante</span>
+          </div>
+
+          <div class="filters" aria-label="Filtres des tâches">
+            <button class="filter-btn active" data-filter="all" type="button" aria-label="Afficher toutes les tâches">
+              <span class="button-icon" aria-hidden="true">✨</span>
+              <span class="button-label">Tout</span>
+            </button>
+            <button class="filter-btn" data-filter="active" type="button" aria-label="Afficher les tâches à faire">
+              <span class="button-icon" aria-hidden="true">⏳</span>
+              <span class="button-label">En cours</span>
+            </button>
+            <button class="filter-btn" data-filter="completed" type="button" aria-label="Afficher les tâches terminées">
+              <span class="button-icon" aria-hidden="true">✅</span>
+              <span class="button-label">OK</span>
+            </button>
+          </div>
+        </div>
+
+        <ul id="todoList" class="todo-list" aria-live="polite"></ul>
+
+        <div id="emptyState" class="empty-state">
+          <p>Aucune tâche pour le moment.</p>
+          <span>Ajoute ta première tâche pour commencer.</span>
+        </div>
+      </main>
+    </div>
+
+    <dialog id="confirmModal" class="modal hidden" aria-labelledby="modalTitle" aria-modal="true">
+      <div class="modal-card">
+        <div class="modal-icon" aria-hidden="true">⚠️</div>
+        <h2 id="modalTitle">Supprimer toutes les tâches ?</h2>
+        <p>Cette action effacera toutes les tâches, même celles déjà terminées.</p>
+
+        <div class="modal-actions">
+          <button id="cancelDelete" class="modal-button secondary" type="button">Annuler</button>
+          <button id="confirmDelete" class="modal-button primary" type="button">Supprimer</button>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

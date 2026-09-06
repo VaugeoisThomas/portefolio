@@ -1,0 +1,120 @@
+[
+  {
+    "username": "T",
+    "currentLevel": "debutant",
+    "unlockedLevels": [
+      "debutant"
+    ],
+    "bestScore": 0,
+    "updatedAt": "2026-08-30T14:10:58.254Z"
+  },
+  {
+    "username": "Te",
+    "currentLevel": "debutant",
+    "unlockedLevels": [
+      "debutant"
+    ],
+    "bestScore": 0,
+    "updatedAt": "2026-08-30T14:10:58.367Z"
+  },
+  {
+    "username": "Tes",
+    "currentLevel": "debutant",
+    "unlockedLevels": [
+      "debutant"
+    ],
+    "bestScore": 0,
+    "updatedAt": "2026-08-30T14:10:58.497Z"
+  },
+  {
+    "username": "Test",
+    "currentLevel": "intermediaire",
+    "unlockedLevels": [
+      "debutant",
+      "intermediaire"
+    ],
+    "bestScore": 3,
+    "updatedAt": "2026-08-30T14:11:21.459Z"
+  },
+  {
+    "username": "Th",
+    "currentLevel": "debutant",
+    "unlockedLevels": [
+      "debutant"
+    ],
+    "bestScore": 0,
+    "updatedAt": "2026-08-30T14:21:29.312Z"
+  },
+  {
+    "username": "Tho",
+    "currentLevel": "debutant",
+    "unlockedLevels": [
+      "debutant"
+    ],
+    "bestScore": 0,
+    "updatedAt": "2026-08-30T14:21:29.527Z"
+  },
+  {
+    "username": "Thom",
+    "currentLevel": "debutant",
+    "unlockedLevels": [
+      "debutant"
+    ],
+    "bestScore": 0,
+    "updatedAt": "2026-08-30T14:21:29.640Z"
+  },
+  {
+    "username": "Thoma",
+    "currentLevel": "debutant",
+    "unlockedLevels": [
+      "debutant"
+    ],
+    "bestScore": 0,
+    "updatedAt": "2026-08-30T14:21:29.700Z"
+  },
+  {
+    "username": "Thomas",
+    "currentLevel": "avance",
+    "unlockedLevels": [
+      "debutant",
+      "intermediaire",
+      "avance"
+    ],
+    "bestScore": 5,
+    "updatedAt": "2026-08-30T15:14:08.227Z",
+    "totalAttempts": 5,
+    "lastPlayedAt": "2026-08-30T15:14:08.227Z",
+    "history": [
+      {
+        "version": "avance",
+        "score": 5,
+        "total": 7,
+        "createdAt": "2026-08-30T15:14:08.227Z"
+      },
+      {
+        "version": "intermediaire",
+        "score": 4,
+        "total": 6,
+        "createdAt": "2026-08-30T15:07:48.368Z"
+      },
+      {
+        "version": "debutant",
+        "score": 5,
+        "total": 5,
+        "createdAt": "2026-08-30T15:06:59.407Z"
+      },
+      {
+        "version": "intermediaire",
+        "score": 4,
+        "total": 5,
+        "createdAt": "2026-08-30T15:03:54.512Z"
+      },
+      {
+        "version": "debutant",
+        "score": 3,
+        "total": 3,
+        "createdAt": "2026-08-30T15:03:24.063Z"
+      }
+    ]
+  }
+]
