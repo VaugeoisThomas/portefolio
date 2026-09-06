@@ -1,11 +1,8 @@
 import type { Project } from '../data/portfolio'
+import { isExternalLink } from '../utils/links'
 
 type ProjectCardProps = {
   project: Project
-}
-
-function isExternalLink(link: string) {
-  return link.startsWith('http')
 }
 
 export function ProjectCard({ project }: Readonly<ProjectCardProps>) {

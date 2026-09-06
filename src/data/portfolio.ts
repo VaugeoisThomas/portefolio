@@ -55,17 +55,6 @@ export const projectCards: Project[] = [
     secondaryLink: 'https://github.com/VaugeoisThomas',
     secondaryLabel: 'GitHub',
   },
-  {
-    tag: 'API',
-    title: 'Backend de gestion',
-    description:
-      'Un projet orienté back-end pour comprendre la logique serveur, les routes, les requêtes et les échanges entre interface et base de données.',
-    tech: ['Node.js', 'API REST', 'Base de données'],
-    primaryLink: 'https://github.com/VaugeoisThomas',
-    primaryLabel: 'Voir le projet',
-    secondaryLink: 'https://github.com/VaugeoisThomas',
-    secondaryLabel: 'Code',
-  },
 ]
 
 export const skills: Skill[] = [
