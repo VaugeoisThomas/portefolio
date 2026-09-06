@@ -1,5 +1,5 @@
 import { AboutSection } from './components/AboutSection'
-import { ContactSection } from './components/ContactSection'
+import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { ProjectsSection } from './components/ProjectsSection'
@@ -11,19 +11,22 @@ export default function App() {
   const { isVisible, scrollToTop } = useScrollToTop()
 
   return (
-    <main className="portfolio">
+    <>
       <Header links={navLinks} />
-      <Hero />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
+      <main id="top" className="portfolio">
+        <Hero />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+      </main>
+
+      <Footer links={navLinks} />
 
       {isVisible && (
         <button className="scroll-top" type="button" aria-label="Retour en haut de la page" onClick={scrollToTop}>
           ↑
         </button>
       )}
-    </main>
+    </>
   )
 }
