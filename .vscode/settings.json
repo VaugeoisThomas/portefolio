@@ -1,0 +1,12 @@
+{
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.sortImports": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.sortImports": "explicit"
+    }
+  }
+}

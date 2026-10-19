@@ -1,0 +1,95 @@
+/* En-tête : disposition mobile par défaut. */
+.site-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 1rem;
+  background: var(--color-surface);
+}
+
+/* Navigation et liste de liens. */
+.site-header nav {
+  flex-basis: 100%;
+}
+
+.site-header ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 1rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-header a {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.site-header nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+/* Bouton du menu et icône hamburger. */
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  padding: 0.75rem 1rem;
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: inline-block;
+  width: 1.25rem;
+  height: 2px;
+  background: currentColor;
+  box-shadow:
+    0 -6px 0 currentColor,
+    0 6px 0 currentColor;
+}
+
+/* Interactions à la souris et au clavier. */
+.site-header a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.site-header a:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Sur grand écran, la navigation reste visible sans bouton. */
+@media (min-width: 48rem) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header nav {
+    display: block;
+    flex-basis: auto;
+  }
+
+  .site-header ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
