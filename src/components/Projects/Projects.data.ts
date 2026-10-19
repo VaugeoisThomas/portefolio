@@ -12,6 +12,7 @@ export type Project = {
     src: string;
     alt: string;
   };
+  featured: boolean;
 };
 
 export const projects: Project[] = [
@@ -29,6 +30,7 @@ export const projects: Project[] = [
       src: groupomaniaPrint,
       alt: "Page d'accueil de Groupomania avec présentation de la communauté et accès au réseau social.",
     },
+    featured: true,
   },
   {
     id: "morpion",
@@ -39,5 +41,50 @@ export const projects: Project[] = [
     technologies: ["React", "TypeScript", "Vite"],
     learning:
       "Pratiquer le découpage d'une interface en composants réutilisables, les tests et un parcours Git avec branches et pull requests.",
+    featured: true,
+  },
+  {
+    id: "ohmyfood",
+    title: "Ohmyfood",
+    category: "Projet de formation",
+    description:
+      "Intégration d'un site en HTML et Sass, sans JavaScript, pour pratiquer Sass, la méthode BEM et l'organisation des styles.",
+    technologies: ["HTML", "Sass"],
+    learning:
+      "Organiser les styles pour les rendre plus lisibles et plus faciles à maintenir.",
+    featured: false,
+  },
+  {
+    id: "orinoco",
+    title: "Orinoco",
+    category: "Projet de formation",
+    description:
+      "Projet réalisé avec Sass et Node.js. J'ai développé le serveur en suivant les explications de l'exercice pour faire communiquer le site avec celui-ci.",
+    technologies: ["Sass", "Node.js"],
+    learning:
+      "Faire communiquer le site avec le serveur et traiter des requêtes.",
+    featured: false,
+  },
+  {
+    id: "sopekocko",
+    title: "SoPekocko",
+    category: "Projet de formation",
+    description:
+      "Développement des routes côté serveur et de la logique liée aux utilisateurs et aux sauces. L'interface Angular était fournie.",
+    technologies: ["Express"],
+    learning:
+      "Organiser les routes d'une API et traiter les requêtes liées aux utilisateurs et aux données.",
+    featured: false,
+  },
+  {
+    id: "la-chouette-agence",
+    title: "La Chouette Agence",
+    category: "Projet de formation",
+    description:
+      "Amélioration du référencement naturel : réduction du poids des images, ajustements des titres et ajout de textes alternatifs, avec des outils d'audit pour vérifier les corrections.",
+    technologies: [],
+    learning:
+      "Utiliser des audits pour identifier des améliorations et vérifier les corrections apportées à un site.",
+    featured: false,
   },
 ];
