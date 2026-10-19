@@ -1,5 +1,11 @@
 main {
-  padding: 2rem 1.5rem;
+  padding: 2.625rem 1.5rem;
   max-width: 83rem;
   margin-inline: auto;
+}
+
+@media (min-width: 80rem) {
+  main {
+    padding-block: 4.5rem;
+  }
 }

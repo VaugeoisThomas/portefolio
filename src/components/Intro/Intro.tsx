@@ -1,3 +1,6 @@
+import arrowDown from '../../assets/arrow-down.svg';
+import arrowUpRight from '../../assets/arrow-up-right.svg';
+import mapPin from '../../assets/map-pin.svg';
 import statusDot from '../../assets/status-dot.svg';
 import IntroVisual from '../IntroVisual/IntroVisual';
 import './Intro.css';
@@ -28,11 +31,28 @@ function Intro() {
                     progresser.
                 </p>
                 <div className="intro-actions">
-                    <a href="#projects" className='intro-action-primary'>Découvrir mes projets</a>
-                    <a href="#contact">Me contacter</a>
+                    <a href="#projects" className='intro-action-primary'>
+                        Découvrir mes projets
+                        <img src={arrowDown} alt="" />
+                    </a>
+                    <a
+                        href="https://vaugeoisthomas.github.io/CurriculumVitae/"
+                        target='_blank'
+                        rel="noopener noreferrer">
+                        Mon CV
+                        <img src={arrowUpRight} alt='' />
+                    </a>
                 </div>
             </div>
             <IntroVisual />
+            <div className="intro-details">
+                <p className='intro-details-location'>
+                    <img src={mapPin} alt='' />
+                    Vidauban, France
+                </p>
+                <p className="intro-details-speciality">Développement web</p>
+                <p className="intro-details-year">Portfolio / 2026</p>
+            </div>
         </section>
     )
 }

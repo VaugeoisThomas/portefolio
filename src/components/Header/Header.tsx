@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import arrowUpRight from '../../assets/arrow-up-right.svg';
 import './Header.css';
 
 const navigationLinks = [
@@ -38,7 +39,10 @@ function Header() {
                     ))}
                 </ul>
             </nav>
-            <a href="#contact" className="header-contact">Parlons ensemble</a>
+            <a href="#contact" className="header-contact">
+                Parlons ensemble
+                <img src={arrowUpRight} alt='' />
+            </a>
         </header>
     )
 }
