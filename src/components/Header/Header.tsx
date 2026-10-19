@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import arrowUpRight from '../../assets/arrow-up-right.svg';
 import './Header.css';
 
 const navigationLinks = [
     { href: "#projects", label: 'Projets' },
+    { href: '#about', label: 'À propos' },
     { href: "#skills", label: 'Compétences' },
     { href: "#background", label: 'Parcours' },
-    { href: "#contact", label: 'Contact' },
 ]
 
 /** Affiche l’en-tête et la navigation principale du portfolio. */
@@ -15,7 +16,10 @@ function Header() {
 
     return (
         <header className='site-header'>
-            <a href="#home">Thomas Vaugeois</a>
+            <a href="#home" className="site-brand">
+                <span className='site-monogram' aria-hidden="true">tv</span>
+                <span>Thomas Vaugeois</span>
+            </a>
             <button
                 type="button"
                 className='menu-toggle'
@@ -35,6 +39,10 @@ function Header() {
                     ))}
                 </ul>
             </nav>
+            <a href="#contact" className="header-contact">
+                Parlons ensemble
+                <img src={arrowUpRight} alt='' />
+            </a>
         </header>
     )
 }

@@ -5,22 +5,24 @@
 }
 
 :root {
-  --color-background: #faf9fc;
+  --color-background: #f9f8fc;
+  --color-text: #24212e;
+  --color-text-secondary: #716b80;
+  --color-primary: #6941d9;
+  --color-accent-background: #eae4fa;
   --color-surface: #ffffff;
-  --color-text: #24212d;
-  --color-text-secondary: #625c70;
-  --color-primary: #6d28d9;
-  --color-accent-background: #f3e8ff;
+  --color-border: #ded9e9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #18151f;
-    --color-surface: #24202e;
     --color-text: #f5f2fa;
     --color-text-secondary: #c4bdd0;
     --color-primary: #b794f6;
     --color-accent-background: #332447;
+    --color-surface: #24202e;
+    --color-border: #443b54;
   }
 }
 
@@ -32,7 +34,7 @@ body {
   margin: 0;
   background: var(--color-background);
   color: var(--color-text);
-  font-family: system-ui, sans-serif;
+  font-family: "Inter Variable", system-ui, sans-serif;
   line-height: 1.5;
 }
 
