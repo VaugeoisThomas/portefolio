@@ -1,0 +1,217 @@
+.intro-visual {
+  position: relative;
+  min-height: 22.1875rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--color-accent-background);
+  overflow: hidden;
+}
+
+.intro-visual-label {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--color-primary);
+  font-size: 0.625rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.code-preview {
+  margin-top: 1.5rem;
+  border: 1px solid #3c3c3c;
+  border-radius: 0.5rem;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  overflow: hidden;
+  box-shadow: 0 1rem 2.5rem rgb(40 24 72 /14%);
+}
+
+.code-preview-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.375rem 0.75rem;
+  border-bottom: 1px solid #3c3c3c;
+  background: #323233;
+  color: #ccc;
+  font-size: 0.625rem;
+}
+
+.code-preview-tabs {
+  display: flex;
+  background: #252526;
+}
+
+.code-preview-tab {
+  padding: 0.625rem 0.875rem;
+  border-top: 2px solid transparent;
+  border-right: 1px solid #252526;
+  background: #2d2d2d;
+  color: #969696;
+  font-size: 0.6875rem;
+}
+
+.code-preview-tab-active {
+  border-top: 2px solid #007acc;
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+.code-preview-content {
+  margin: 0;
+  padding: 1.125rem;
+  overflow-x: auto;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.625rem;
+  line-height: 2;
+  counter-reset: code-line;
+}
+
+.code-preview-content code {
+  font-family: inherit;
+}
+
+.code-preview-line {
+  display: block;
+  counter-increment: code-line;
+}
+
+.code-preview-line::before {
+  content: counter(code-line);
+  display: inline-block;
+  width: 2ch;
+  margin-right: 1.5ch;
+  color: #858585;
+  text-align: right;
+}
+
+/* Coloration statique inspirée du thème sombre de VS Code. */
+.code-token-keyword {
+  color: #569cd6;
+}
+
+.code-token-property {
+  color: #9cdcfe;
+}
+
+.code-token-string {
+  color: #ce9178;
+}
+
+.code-token-bracket {
+  color: #ffd700;
+}
+
+.intro-visual-result {
+  margin-top: 1rem;
+  padding: 1.125rem;
+  border-radius: 0.625rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: 0 1rem 2.5rem rgb(40 24 72 / 14%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.intro-visual-result-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 0.625rem;
+  background: var(--color-accent-background);
+}
+
+.intro-visual-result-text {
+  display: grid;
+  gap: 0.3125rem;
+}
+
+.intro-visual-result-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.intro-visual-result-subtitle {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.intro-visual-symbol {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 0;
+  font-family: Consolas, monospace;
+  font-size: 5.375rem;
+  line-height: 1;
+  color: var(--color-primary);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.intro-visual-label,
+.code-preview,
+.intro-visual-result {
+  position: relative;
+  z-index: 1;
+}
+
+.intro-orbit {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.intro-orbit-first {
+  top: -100px;
+  left: 108px;
+}
+
+.intro-orbit-second {
+  top: -20px;
+  left: 35px;
+}
+
+@media (min-width: 80rem) {
+  .intro-visual {
+    min-height: 29.375rem;
+  }
+
+  .intro-visual-result-title {
+    font-size: 0.9375rem;
+  }
+
+  .intro-visual-result-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .code-preview {
+    max-width: 25.25rem;
+    margin-left: 0.75rem;
+    margin-top: 2.8125rem;
+  }
+
+  .intro-visual-result {
+    max-width: 22.125rem;
+    margin-left: 3.875rem;
+  }
+
+  .code-preview-content {
+    font-size: 0.75rem;
+  }
+
+  .intro-orbit-first {
+    left: 180px;
+  }
+
+  .intro-orbit-second {
+    left: 120px;
+  }
+}
