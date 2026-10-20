@@ -1,0 +1,134 @@
+.about {
+  background: var(--color-about-background);
+  padding: 4rem 0;
+}
+
+.about-inner {
+  display: grid;
+  gap: 2.25rem;
+}
+
+.about-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.6875rem;
+  color: #c0b4d6;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.about-label::before {
+  content: "";
+  width: 1.25rem;
+  height: 2px;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #fff;
+  margin: 0;
+}
+
+.about-description {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: #c0b4d6;
+}
+
+.about-values {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.about-values li {
+  display: flex;
+  align-items: center;
+  gap: 0.4375rem;
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.about-caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #c0b4d6;
+  font-size: 0.75rem;
+}
+
+.about-location {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+}
+
+.about-photo-frame {
+  position: relative;
+}
+
+.about-photo-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  color: #24212e;
+  border-radius: 0.25rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+}
+
+.about-photo-label img {
+  flex-shrink: 0;
+}
+
+@media (min-width: 80rem) {
+  .about-inner {
+    grid-template-columns: 22.5rem 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about {
+    padding-block: 6rem;
+  }
+
+  .about-photo {
+    aspect-ratio: 9 / 10;
+  }
+
+  .about-title {
+    font-size: 2.75rem;
+  }
+}

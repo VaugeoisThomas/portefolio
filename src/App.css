@@ -1,7 +1,11 @@
 main {
-  padding: 2.625rem 1.5rem;
+  padding: 2.625rem 0;
+}
+
+.page-container {
   max-width: 83rem;
-  margin-inline: auto;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 @media (min-width: 80rem) {
