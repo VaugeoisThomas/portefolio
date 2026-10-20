@@ -24,7 +24,7 @@ function About() {
                 <div className="about-content">
                     <header className='about-header'>
                         <div className="about-heading">
-                            <p className="about-label">02 / À propos</p>
+                            <p className="section-label about-label">02 / À propos</p>
                             <h2 id="about-title" className='about-title'>Un esprit curieux, les mains dans le code.</h2>
                         </div>
                     </header>

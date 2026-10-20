@@ -12,7 +12,7 @@ function Projects() {
         <section id="projects" className="projects" aria-labelledby="projects-title">
             <header className="projects-header">
                 <div className="projects-heading">
-                    <p className="projects-label">01 / Projets sélectionnés</p>
+                    <p className="section-label projects-label">01 / Projets sélectionnés</p>
                     <h2 id="projects-title" className='projects-title'>Apprendre. Construire. Affiner.</h2>
                 </div>
                 <p className='projects-description'>
