@@ -1,3 +1,4 @@
+import info from '../../assets/info.svg';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './Projects.css';
 import { projects } from './Projects.data';
@@ -28,6 +29,10 @@ function Projects() {
                 {otherProjects.map(project => (
                     <ProjectCard project={project} key={project.id} />
                 ))}
+            </div>
+            <div className="projects-note">
+                <img src={info} alt="" />
+                <p>Ces réalisations sont des projets de formation ou personnels, et non des commandes clients.</p>
             </div>
         </section>
     )
