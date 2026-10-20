@@ -46,6 +46,20 @@
   margin-top: 2rem;
 }
 
+.projects-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  color: var(--color-text-secondary);
+  margin: 2rem 0;
+  font-size: 0.75rem;
+}
+
+.projects-note img {
+  margin-top: 0.0938rem;
+  flex-shrink: 0;
+}
+
 @media (min-width: 80rem) {
   .projects {
     padding-top: 6rem;
