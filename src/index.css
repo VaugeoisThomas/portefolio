@@ -12,6 +12,7 @@
   --color-accent-background: #eae4fa;
   --color-surface: #ffffff;
   --color-border: #ded9e9;
+  --color-about-background: #221a35;
 }
 
 @media (prefers-color-scheme: dark) {
