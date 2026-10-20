@@ -13,7 +13,7 @@ Le site présente mes projets, mon approche du développement web et mes compét
 - Thèmes clair et sombre selon les préférences du système.
 - Six projets : deux mis en avant et quatre sous une forme plus compacte.
 - Cartes générées à partir de données TypeScript ; images et liens de code source facultatifs.
-- CV ouvert dans un nouvel onglet depuis sa page GitHub Pages existante.
+- CV téléchargeable au format PDF depuis le bouton « Télécharger mon CV (PDF) » de l’accueil.
 - Illustration décorative inspirée de VS Code, avec onglets statiques et code coloré.
 - Section À propos avec portrait, présentation personnelle et valeurs.
 - Compétences réparties en trois groupes : Interface, Serveur et données, et Outils. Chaque carte affiche une icône, une description et des technologies issues de données TypeScript.
@@ -33,6 +33,8 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [x] Intégrer l’en-tête, la navigation responsive et les styles de focus clavier.
 - [x] Adapter l’accueil aux maquettes, avec maintien du hamburger mobile.
 - [x] Ajouter le lien vers le CV et les repères personnels, dont la localisation à Vidauban.
+- [x] Mettre à jour le CV dans son dépôt dédié.
+- [x] Remplacer le lien de consultation du CV par le téléchargement d’un PDF hébergé avec le portfolio.
 - [x] Construire le visuel d’accueil avec éditeur, orbites, icônes et carte de résultat.
 - [x] Créer une carte réutilisable et un catalogue de six projets.
 - [x] Distinguer les projets mis en avant des projets secondaires.
@@ -51,7 +53,6 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [ ] Ajouter le pied de page.
 - [ ] Compléter les liens vers les dépôts après vérification de leurs adresses.
 - [ ] Ajouter les captures manquantes lorsqu’elles sont disponibles, notamment celle de Morpion.
-- [ ] Mettre à jour le CV dans son dépôt dédié.
 - [ ] Effectuer une comparaison visuelle finale avec les maquettes sur mobile et desktop.
 - [ ] Vérifier les contrastes, la navigation au clavier, les textes alternatifs et les liens dans les deux thèmes.
 - [ ] Compléter les métadonnées : titre, description et aperçu de partage.
@@ -110,7 +111,7 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | `src/index.css` | Thèmes, styles globaux et repères communs `section-label` |
 | `src/App.css` | Conteneur général de la page |
 | `src/components/Header/` | Navigation et menu mobile |
-| `src/components/Intro/` | Présentation, lien CV et repères personnels |
+| `src/components/Intro/` | Présentation, bouton de téléchargement du CV et repères personnels |
 | `src/components/IntroVisual/` | Illustration et données du code décoratif |
 | `src/components/Projects/Projects.data.ts` | Catalogue des projets |
 | `src/components/Projects/` | En-tête et répartition des projets |
@@ -119,13 +120,16 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | `src/components/Skills/Skills.data.ts` | Groupes de compétences, descriptions, technologies et icônes |
 | `src/components/Skills/` | Affichage des compétences et styles responsive |
 | `src/assets/` | Portrait, captures et fichiers SVG |
+| `public/cv-thomas-vaugeois.pdf` | CV proposé au téléchargement |
 
 Chaque composant possède son dossier avec son fichier `.tsx` et son fichier `.css`. Les données sont séparées du JSX lorsque cela améliore la lisibilité.
+
+Pour actualiser le CV téléchargeable, remplacer `public/cv-thomas-vaugeois.pdf` en conservant son nom. Ce PDF est une copie indépendante : une modification du dépôt du CV ne met pas automatiquement à jour le fichier du portfolio.
 
 ## Références
 
 - [Dépôt du portfolio](https://github.com/VaugeoisThomas/portefolio)
 - [Maquettes Figma mobile et desktop](https://www.figma.com/design/uHWjOhrsb0qkhPolijW9f8/Sans-titre)
-- [CV actuel](https://vaugeoisthomas.github.io/CurriculumVitae/) — document à actualiser, sans le considérer comme la source à jour des informations du portfolio.
+- [CV en ligne](https://vaugeoisthomas.github.io/CurriculumVitae/) — version HTML maintenue dans son dépôt dédié ; le portfolio propose une copie PDF au téléchargement.
 
 Les maquettes contiennent des informations d’exemple : l’identité, les projets et le parcours affichés sur le portfolio doivent correspondre aux informations confirmées de Thomas Vaugeois.
