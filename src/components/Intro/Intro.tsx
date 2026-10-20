@@ -36,10 +36,10 @@ function Intro() {
                         <img src={arrowDown} alt="" />
                     </a>
                     <a
-                        href="https://vaugeoisthomas.github.io/CurriculumVitae/"
-                        target='_blank'
-                        rel="noopener noreferrer">
-                        Mon CV
+                        href={`${import.meta.env.BASE_URL}cv-thomas-vaugeois.pdf`}
+                        download
+                    >
+                        Télécharger mon CV (PDF)
                         <img src={arrowUpRight} alt='' />
                     </a>
                 </div>
@@ -53,7 +53,7 @@ function Intro() {
                 <p className="intro-details-speciality">Développement web</p>
                 <p className="intro-details-year">Portfolio / 2026</p>
             </div>
-        </section>
+        </section >
     )
 }
 
