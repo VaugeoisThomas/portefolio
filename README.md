@@ -2,9 +2,9 @@
 
 Portfolio personnel de **Thomas Vaugeois, développeur web junior**, en recherche d’un **CDD ou d’un CDI**.
 
-Le site présente mes projets, mes apprentissages et, à terme, mes compétences, mon parcours et mes coordonnées. Il est développé progressivement avec React, TypeScript et Vite, à partir de maquettes Figma mobile et desktop adaptées à mes informations.
+Le site présente mes projets, mon approche du développement web et mes compétences. Mon parcours et mes coordonnées viendront compléter ces informations. Il est développé progressivement avec React, TypeScript et Vite, à partir de maquettes Figma mobile et desktop adaptées à mes informations.
 
-**État actuel : en cours de développement.** L’accueil et la section Projets sont intégrés. Certaines destinations de la navigation correspondent encore à des sections à construire.
+**État actuel : en cours de développement.** L’accueil et les sections Projets, À propos et Compétences sont intégrés. Les sections Parcours, Contact et le pied de page restent à construire.
 
 ## Fonctionnement
 
@@ -15,6 +15,10 @@ Le site présente mes projets, mes apprentissages et, à terme, mes compétences
 - Cartes générées à partir de données TypeScript ; images et liens de code source facultatifs.
 - CV ouvert dans un nouvel onglet depuis sa page GitHub Pages existante.
 - Illustration décorative inspirée de VS Code, avec onglets statiques et code coloré.
+- Section À propos avec portrait, présentation personnelle et valeurs.
+- Compétences réparties en trois groupes : Interface, Serveur et données, et Outils. Chaque carte affiche une icône, une description et des technologies issues de données TypeScript.
+- Cartes de compétences disposées sur une colonne sur mobile et trois sur grand écran à partir de `80rem`.
+- Note de transparence sur le contexte personnel ou de formation des projets présentés.
 
 Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni service payant. Le futur contact utilisera des liens email, LinkedIn et GitHub, sans formulaire côté serveur.
 
@@ -33,11 +37,15 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [x] Créer une carte réutilisable et un catalogue de six projets.
 - [x] Distinguer les projets mis en avant des projets secondaires.
 - [x] Intégrer la capture de Groupomania.
+- [x] Ajouter une note de transparence aux projets avec une icône d’information.
+- [x] Construire la section **À propos** avec un portrait, un texte personnel et les valeurs de persévérance, d’esprit d’équipe et d’envie d’apprendre.
+- [x] Construire la section **Compétences** avec trois groupes, leurs icônes et descriptions, et une disposition responsive.
+- [x] Séparer les données des compétences du JSX et générer les groupes et technologies avec `map`.
+- [x] Mutualiser les styles des repères Projets, À propos et Compétences dans la classe globale `section-label`.
 
 ### À faire
 
-- [ ] Construire la section **À propos** avec un texte personnel validé.
-- [ ] Construire la section **Compétences**, en distinguant les compétences pratiquées et celles maîtrisées en autonomie.
+- [ ] Préciser, si nécessaire, le niveau d’autonomie associé aux compétences présentées.
 - [ ] Construire la section **Parcours** avec les dates et expériences confirmées.
 - [ ] Construire la section **Contact** avec les coordonnées et liens confirmés.
 - [ ] Ajouter le pied de page.
@@ -99,7 +107,7 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | Fichier ou dossier | Contenu |
 | --- | --- |
 | `src/App.tsx` | Assemblage et ordre des sections |
-| `src/index.css` | Thèmes et styles globaux |
+| `src/index.css` | Thèmes, styles globaux et repères communs `section-label` |
 | `src/App.css` | Conteneur général de la page |
 | `src/components/Header/` | Navigation et menu mobile |
 | `src/components/Intro/` | Présentation, lien CV et repères personnels |
@@ -107,7 +115,10 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | `src/components/Projects/Projects.data.ts` | Catalogue des projets |
 | `src/components/Projects/` | En-tête et répartition des projets |
 | `src/components/ProjectCard/` | Carte réutilisable et ses styles |
-| `src/assets/` | Captures et fichiers SVG |
+| `src/components/About/` | Portrait, présentation personnelle et valeurs |
+| `src/components/Skills/Skills.data.ts` | Groupes de compétences, descriptions, technologies et icônes |
+| `src/components/Skills/` | Affichage des compétences et styles responsive |
+| `src/assets/` | Portrait, captures et fichiers SVG |
 
 Chaque composant possède son dossier avec son fichier `.tsx` et son fichier `.css`. Les données sont séparées du JSX lorsque cela améliore la lisibilité.
 
