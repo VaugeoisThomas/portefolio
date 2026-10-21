@@ -1,0 +1,143 @@
+.contact {
+  padding-block: 4rem;
+  background: #6941d9;
+  color: #fff;
+}
+
+.contact-inner {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-top {
+  display: grid;
+  gap: 2rem;
+}
+
+.contact-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+.contact-message {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-header {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-label {
+  color: #eae4fa;
+}
+
+.contact-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.13;
+}
+
+.contact-description {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: #eae4fa;
+  max-width: 60ch;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3.125rem;
+  padding: 0.75rem 1.25rem;
+  background: #fff;
+  color: #24212e;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-decoration: none;
+  gap: 0.75rem;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.contact-links a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.contact-email img {
+  filter: brightness(0) invert(1);
+}
+
+.contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  font-size: 0.75rem;
+  text-underline-offset: 0.2em;
+}
+
+.contact-socials img {
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 80rem) {
+  .contact {
+    padding-block: 6rem;
+  }
+
+  .contact-inner {
+    gap: 3rem;
+  }
+
+  .contact-header {
+    gap: 3.5rem;
+  }
+
+  .contact-title {
+    font-size: 4.125rem;
+    line-height: 1.1;
+    max-width: 42rem;
+  }
+
+  .contact-top {
+    grid-template-columns: minmax(0, 1fr) 21.875rem;
+    gap: 5rem;
+    align-items: end;
+  }
+
+  .contact-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-email {
+    font-size: 1.75rem;
+  }
+}
