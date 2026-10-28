@@ -1,5 +1,5 @@
 .footer {
-  padding-block: 2rem;
+  padding-block: var(--space-8);
   border-top: 1px solid var(--color-border);
   color: var(--color-text-secondary);
 }
@@ -7,14 +7,14 @@
 .footer-inner {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  font-size: 0.875rem;
+  gap: var(--space-4);
+  font-size: var(--text-body);
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .footer-links a {
