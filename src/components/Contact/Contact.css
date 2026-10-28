@@ -1,5 +1,5 @@
 .contact {
-  padding-block: 4rem;
+  padding-block: var(--section-padding-mobile);
   background: #6941d9;
   color: #fff;
 }
@@ -38,7 +38,7 @@
 
 .contact-title {
   margin: 0;
-  font-size: 2rem;
+  font-size: var(--section-title-size-mobile);
   font-weight: 500;
   line-height: 1.13;
 }
@@ -107,7 +107,7 @@
 
 @media (min-width: 80rem) {
   .contact {
-    padding-block: 6rem;
+    padding-block: var(--section-padding-desktop);
   }
 
   .contact-inner {

@@ -13,6 +13,14 @@
   --color-surface: #ffffff;
   --color-border: #ded9e9;
   --color-about-background: #221a35;
+
+  /* Espacements des sections : mobile, puis grand écran. */
+  --section-padding-mobile: 4rem;
+  --section-padding-desktop: 6rem;
+
+  /* Tailles communes des titres ; Contact garde sa taille desktop spécifique. */
+  --section-title-size-mobile: 2rem;
+  --section-title-size-desktop: 2.75rem;
 }
 
 @media (prefers-color-scheme: dark) {

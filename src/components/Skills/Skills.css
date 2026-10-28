@@ -1,5 +1,5 @@
 .skills {
-  padding-block: 4rem;
+  padding-block: var(--section-padding-mobile);
 }
 
 .skills-header {
@@ -17,7 +17,7 @@
 }
 
 .skills-title {
-  font-size: 2rem;
+  font-size: var(--section-title-size-mobile);
   font-weight: 600;
   line-height: 1.13;
   margin: 0;
@@ -87,11 +87,11 @@
 
 @media (min-width: 80rem) {
   .skills {
-    padding-block: 6rem;
+    padding-block: var(--section-padding-desktop);
   }
 
   .skills-title {
-    font-size: 2.75rem;
+    font-size: var(--section-title-size-desktop);
   }
 
   .skills-list {

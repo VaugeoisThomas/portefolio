@@ -1,6 +1,6 @@
 .about {
   background: var(--color-about-background);
-  padding: 4rem 0;
+  padding: var(--section-padding-mobile) 0;
 }
 
 .about-inner {
@@ -19,7 +19,7 @@
 }
 
 .about-title {
-  font-size: 2rem;
+  font-size: var(--section-title-size-mobile);
   font-weight: 500;
   line-height: 1.15;
   color: #fff;
@@ -107,7 +107,7 @@
   }
 
   .about {
-    padding-block: 6rem;
+    padding-block: var(--section-padding-desktop);
   }
 
   .about-photo {
@@ -115,6 +115,6 @@
   }
 
   .about-title {
-    font-size: 2.75rem;
+    font-size: var(--section-title-size-desktop);
   }
 }

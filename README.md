@@ -2,9 +2,11 @@
 
 Portfolio personnel de **Thomas Vaugeois, développeur web junior**, en recherche d’un **CDD ou d’un CDI**.
 
-Le site présente mes projets, mon approche du développement web et mes compétences. Mon parcours et mes coordonnées viendront compléter ces informations. Il est développé progressivement avec React, TypeScript et Vite, à partir de maquettes Figma mobile et desktop adaptées à mes informations.
+Le site présente mes projets, mon approche du développement web, mes compétences, mon parcours et mes coordonnées. Il est développé progressivement avec React, TypeScript et Vite, à partir de maquettes Figma mobile et desktop adaptées à mes informations.
 
-**État actuel : en cours de développement.** L’accueil et les sections Projets, À propos et Compétences sont intégrés. Les sections Parcours, Contact et le pied de page restent à construire.
+**État actuel : première version publiée sur Vercel.** L’accueil, les sections Projets, À propos, Compétences, Parcours et Contact, ainsi que le pied de page sont intégrés. Le site continue d’évoluer.
+
+**[Consulter le portfolio](https://portefolio-rust-theta.vercel.app/)**
 
 ## Fonctionnement
 
@@ -19,8 +21,10 @@ Le site présente mes projets, mon approche du développement web et mes compét
 - Compétences réparties en trois groupes : Interface, Serveur et données, et Outils. Chaque carte affiche une icône, une description et des technologies issues de données TypeScript.
 - Cartes de compétences disposées sur une colonne sur mobile et trois sur grand écran à partir de `80rem`.
 - Note de transparence sur le contexte personnel ou de formation des projets présentés.
+- Frise chronologique du parcours, générée à partir de données TypeScript et disposée sur deux colonnes avec sa présentation sur desktop.
+- Section Contact avec liens email, GitHub et LinkedIn, et pied de page avec les réseaux professionnels.
 
-Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni service payant. Le futur contact utilisera des liens email, LinkedIn et GitHub, sans formulaire côté serveur.
+Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni service payant. Le contact utilise des liens email, LinkedIn et GitHub, sans formulaire côté serveur.
 
 ## Avancement
 
@@ -44,19 +48,21 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [x] Construire la section **Compétences** avec trois groupes, leurs icônes et descriptions, et une disposition responsive.
 - [x] Séparer les données des compétences du JSX et générer les groupes et technologies avec `map`.
 - [x] Mutualiser les styles des repères Projets, À propos et Compétences dans la classe globale `section-label`.
+- [x] Construire la section **Parcours** avec une frise des projets personnels et des formations, selon les informations confirmées.
+- [x] Construire la section **Contact** avec les coordonnées et liens confirmés.
+- [x] Ajouter le pied de page responsive.
+- [x] Personnaliser le titre, la description du document et la favicon.
+- [x] Publier la première version sur Vercel et vérifier son fonctionnement sur téléphone.
 
 ### À faire
 
 - [ ] Préciser, si nécessaire, le niveau d’autonomie associé aux compétences présentées.
-- [ ] Construire la section **Parcours** avec les dates et expériences confirmées.
-- [ ] Construire la section **Contact** avec les coordonnées et liens confirmés.
-- [ ] Ajouter le pied de page.
+- [ ] Mutualiser les dimensions CSS récurrentes avec des variables adaptées à leur rôle, en conservant le rendu visuel.
 - [ ] Compléter les liens vers les dépôts après vérification de leurs adresses.
 - [ ] Ajouter les captures manquantes lorsqu’elles sont disponibles, notamment celle de Morpion.
 - [ ] Effectuer une comparaison visuelle finale avec les maquettes sur mobile et desktop.
 - [ ] Vérifier les contrastes, la navigation au clavier, les textes alternatifs et les liens dans les deux thèmes.
-- [ ] Compléter les métadonnées : titre, description et aperçu de partage.
-- [ ] Configurer et vérifier le déploiement sur GitHub Pages.
+- [ ] Ajouter les métadonnées et l’image d’aperçu de partage, ainsi que l’URL canonique.
 
 Pour actualiser cette liste directement sur GitHub, remplacer `[ ]` par `[x]` lorsqu’une tâche est terminée.
 
@@ -119,6 +125,12 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | `src/components/About/` | Portrait, présentation personnelle et valeurs |
 | `src/components/Skills/Skills.data.ts` | Groupes de compétences, descriptions, technologies et icônes |
 | `src/components/Skills/` | Affichage des compétences et styles responsive |
+| `src/components/Background/Background.data.ts` | Périodes, titres, contextes et descriptions des étapes du parcours |
+| `src/components/Background/` | Présentation du parcours, encadré professionnel et frise responsive |
+| `src/components/Contact/` | Coordonnées, bouton email et liens vers les réseaux professionnels |
+| `src/components/Footer/` | Pied de page et liens GitHub et LinkedIn |
+| `index.html` | Langue, titre, description et lien vers la favicon |
+| `public/favicon.svg` | Favicon personnalisée du portfolio |
 | `src/assets/` | Portrait, captures et fichiers SVG |
 | `public/cv-thomas-vaugeois.pdf` | CV proposé au téléchargement |
 
@@ -128,6 +140,7 @@ Pour actualiser le CV téléchargeable, remplacer `public/cv-thomas-vaugeois.pdf
 
 ## Références
 
+- [Portfolio publié sur Vercel](https://portefolio-rust-theta.vercel.app/)
 - [Dépôt du portfolio](https://github.com/VaugeoisThomas/portefolio)
 - [Maquettes Figma mobile et desktop](https://www.figma.com/design/uHWjOhrsb0qkhPolijW9f8/Sans-titre)
 - [CV en ligne](https://vaugeoisthomas.github.io/CurriculumVitae/) — version HTML maintenue dans son dépôt dédié ; le portfolio propose une copie PDF au téléchargement.
