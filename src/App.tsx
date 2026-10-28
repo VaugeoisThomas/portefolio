@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About/About'
+import Background from './components/Background/Background'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
@@ -21,6 +22,7 @@ function App() {
         <About />
         <div className="page-container">
           <Skills />
+          <Background />
         </div>
         <Contact />
       </main>
