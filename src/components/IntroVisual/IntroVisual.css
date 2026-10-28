@@ -2,7 +2,7 @@
   position: relative;
   min-height: 22.1875rem;
   padding: 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: var(--radius-card);
   background: var(--color-accent-background);
   overflow: hidden;
 }
