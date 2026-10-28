@@ -1,10 +1,6 @@
-.background {
-  padding-block: var(--section-padding-mobile);
-}
-
 .background-header {
   display: grid;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .background-label {
@@ -12,29 +8,20 @@
 }
 
 .background-title {
-  margin: 0;
-  font-size: var(--section-title-size-mobile);
   font-weight: 500;
   line-height: 1.15;
-}
-
-.background-description,
-.background-step-description {
-  font-size: 0.875rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
 }
 
 .background-next-step {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
-  padding: 1rem;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding: var(--space-4);
   border-radius: 0.5rem;
   background: var(--color-accent-background);
   color: var(--color-primary);
-  font-size: 0.875rem;
+  font-size: var(--text-body);
   line-height: 1.5;
 }
 
@@ -46,14 +33,14 @@
 .background-timeline {
   list-style-type: none;
   padding: 0;
-  margin: 2rem 0 0;
+  margin: var(--space-8) 0 0;
   display: grid;
-  gap: 2.5rem;
+  gap: var(--space-10);
 }
 
 .background-step {
   position: relative;
-  padding-left: 2rem;
+  padding-left: var(--space-8);
 }
 
 .background-step::before {
@@ -83,25 +70,25 @@
 }
 
 .background-period {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.625rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
   color: var(--color-primary);
   text-transform: uppercase;
 }
 
 .background-step h3 {
-  margin: 0.5rem 0;
-  font-size: 1.125rem;
+  margin: var(--space-2) 0;
+  font-size: var(--text-subtitle);
   font-weight: 600;
 }
 
 .background-context {
-  font-size: 0.75rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
 }
 
 .background-step-description {
-  margin-top: 0.75rem;
+  margin-top: var(--space-3);
 }
 
 @media (min-width: 80rem) {
@@ -110,11 +97,6 @@
     grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
     gap: 7.5rem;
     align-items: start;
-    padding-block: var(--section-padding-desktop);
-  }
-
-  .background-title {
-    font-size: var(--section-title-size-desktop);
   }
 
   .background-timeline {

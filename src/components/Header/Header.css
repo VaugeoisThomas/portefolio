@@ -1,17 +1,16 @@
 /* En-tête : disposition mobile par défaut. */
+
 .site-header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  max-width: 83rem;
+  gap: var(--space-4);
+  max-width: var(--page-max-width);
   margin-inline: auto;
-
-  padding: 1rem 1.5rem;
+  padding: var(--space-4) var(--page-gutter);
   background: var(--color-background);
-
   position: relative;
 }
 
@@ -19,8 +18,8 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 1.5rem;
-  right: 1.5rem;
+  left: var(--page-gutter);
+  right: var(--page-gutter);
   height: 1px;
   background: var(--color-border);
 }
@@ -41,12 +40,13 @@
   border-radius: 0.5rem;
   background: var(--color-primary);
   color: var(--color-background);
-  font-size: 0.8125rem;
+  font-size: var(--text-caption);
   font-weight: 700;
   text-transform: uppercase;
 }
 
 /* Navigation et liste de liens. */
+
 .site-header nav {
   flex-basis: 100%;
 }
@@ -54,8 +54,7 @@
 .site-header ul {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem 1rem;
-
+  gap: var(--space-2) var(--space-4);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -69,18 +68,18 @@
 
 .site-header nav a {
   display: block;
-  padding: 0.75rem 1rem;
+  padding: var(--space-3) var(--space-4);
   text-align: left;
 }
 
 /* Bouton du menu et icône hamburger. */
+
 .menu-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-
-  padding: 0.75rem 1rem;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
   font: inherit;
   color: var(--color-text);
   background: transparent;
@@ -94,12 +93,12 @@
   width: 1.25rem;
   height: 2px;
   background: currentColor;
-  box-shadow:
-    0 -6px 0 currentColor,
+  box-shadow: 0 -6px 0 currentColor,
     0 6px 0 currentColor;
 }
 
 /* Interactions à la souris et au clavier. */
+
 .site-header a:hover {
   color: var(--color-primary);
   text-decoration: underline;
@@ -108,8 +107,8 @@
 
 .site-header a:focus-visible,
 .menu-toggle:focus-visible {
-  outline: 3px solid var(--color-primary);
-  outline-offset: 3px;
+  outline: var(--focus-width) solid var(--color-primary);
+  outline-offset: var(--focus-offset);
 }
 
 .header-contact {
@@ -117,6 +116,7 @@
 }
 
 /* Sur grand écran, la navigation reste visible sans bouton. */
+
 @media (min-width: 48rem) {
   .menu-toggle {
     display: none;
@@ -134,12 +134,12 @@
   .site-header ul {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem 1.875rem;
+    gap: var(--space-2) 1.875rem;
   }
 
   .site-header nav a {
     color: var(--color-text-secondary);
-    font-size: 0.8125rem;
+    font-size: var(--text-caption);
     font-weight: 400;
     padding-inline: 0;
   }
@@ -152,12 +152,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 3.125rem;
-    padding: 0.75rem 1.25rem;
+    min-height: var(--action-min-height);
+    padding: var(--space-3) var(--space-5);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-action);
-    font-size: 0.875rem;
-    gap: 1rem;
+    font-size: var(--text-body);
+    gap: var(--space-4);
   }
 }
 

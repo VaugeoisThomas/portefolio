@@ -1,0 +1,61 @@
+/* Espacements communs, avec une adaptation unique au grand écran. */
+
+.skills,
+.background,
+.contact {
+  padding-block: var(--section-padding-mobile);
+}
+
+/* Les composants gardent leur graisse, interligne et couleur propres. */
+
+.projects-title,
+.about-title,
+.skills-title,
+.background-title,
+.contact-title {
+  margin: 0;
+  font-size: var(--section-title-size-mobile);
+}
+
+/* Paragraphes descriptifs de même présentation. */
+
+.projects-description,
+.project-card-description,
+.skills-description,
+.skills-group-description,
+.background-description,
+.background-step-description {
+  font-size: var(--text-body);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* Base des liens présentés comme des boutons. */
+
+.intro-actions a,
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--action-min-height);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-action);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Les seuils restent explicites : var() ne s’utilise pas dans une media query. */
+
+@media (min-width: 80rem) {
+  .skills,
+  .background,
+  .contact {
+    padding-block: var(--section-padding-desktop);
+  }
+
+  .projects-title,
+  .about-title,
+  .skills-title,
+  .background-title {
+    font-size: var(--section-title-size-desktop);
+  }
+}

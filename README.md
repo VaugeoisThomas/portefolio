@@ -57,7 +57,8 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 ### À faire
 
 - [ ] Préciser, si nécessaire, le niveau d’autonomie associé aux compétences présentées.
-- [ ] Mutualiser les dimensions CSS récurrentes avec des variables adaptées à leur rôle, en conservant le rendu visuel.
+- [x] Centraliser les espacements, tailles de texte, polices, arrondis et dimensions communes dans des variables CSS.
+- [x] Regrouper les règles partagées des sections, descriptions et boutons dans une feuille CSS commune.
 - [ ] Compléter les liens vers les dépôts après vérification de leurs adresses.
 - [ ] Ajouter les captures manquantes lorsqu’elles sont disponibles, notamment celle de Morpion.
 - [ ] Effectuer une comparaison visuelle finale avec les maquettes sur mobile et desktop.
@@ -115,6 +116,7 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | --- | --- |
 | `src/App.tsx` | Assemblage et ordre des sections |
 | `src/index.css` | Thèmes, styles globaux et repères communs `section-label` |
+| `src/styles/shared.css` | Règles partagées des sections, titres, descriptions et boutons |
 | `src/App.css` | Conteneur général de la page |
 | `src/components/Header/` | Navigation et menu mobile |
 | `src/components/Intro/` | Présentation, bouton de téléchargement du CV et repères personnels |
@@ -135,6 +137,8 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | `public/cv-thomas-vaugeois.pdf` | CV proposé au téléchargement |
 
 Chaque composant possède son dossier avec son fichier `.tsx` et son fichier `.css`. Les données sont séparées du JSX lorsque cela améliore la lisibilité.
+
+Les variables de `src/index.css` définissent les polices, couleurs, tailles de texte, espacements et dimensions communes. `src/styles/shared.css`, importé par cette feuille globale, regroupe les styles identiques. Les CSS des composants conservent les variantes et les dispositions spécifiques. Les styles globaux sont chargés avant les composants dans `src/main.tsx` pour permettre les surcharges locales, notamment le grand titre de Contact. Les seuils des media queries restent explicites, car les variables CSS ne peuvent pas être utilisées dans leurs conditions.
 
 Pour actualiser le CV téléchargeable, remplacer `public/cv-thomas-vaugeois.pdf` en conservant son nom. Ce PDF est une copie indépendante : une modification du dépôt du CV ne met pas automatiquement à jour le fichier du portfolio.
 
