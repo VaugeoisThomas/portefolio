@@ -1,5 +1,5 @@
 .projects {
-  padding-top: 4rem;
+  padding-top: var(--section-padding-mobile);
 }
 
 .projects-header {
@@ -13,7 +13,7 @@
 }
 
 .projects-title {
-  font-size: 2rem;
+  font-size: var(--section-title-size-mobile);
   font-weight: 600;
   line-height: 1.13;
   margin: 0;
@@ -48,7 +48,7 @@
 
 @media (min-width: 80rem) {
   .projects {
-    padding-top: 6rem;
+    padding-top: var(--section-padding-desktop);
   }
 
   .projects-header {
@@ -58,7 +58,7 @@
   }
 
   .projects-title {
-    font-size: 2.75rem;
+    font-size: var(--section-title-size-desktop);
   }
 
   .projects-others {

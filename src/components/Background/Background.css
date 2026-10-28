@@ -1,5 +1,5 @@
 .background {
-  padding-block: 4rem;
+  padding-block: var(--section-padding-mobile);
 }
 
 .background-header {
@@ -13,7 +13,7 @@
 
 .background-title {
   margin: 0;
-  font-size: 2rem;
+  font-size: var(--section-title-size-mobile);
   font-weight: 500;
   line-height: 1.15;
 }
@@ -110,11 +110,11 @@
     grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
     gap: 7.5rem;
     align-items: start;
-    padding-block: 6rem;
+    padding-block: var(--section-padding-desktop);
   }
 
   .background-title {
-    font-size: 2.75rem;
+    font-size: var(--section-title-size-desktop);
   }
 
   .background-timeline {
