@@ -56,16 +56,17 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [x] Personnaliser le titre, la description du document et la favicon.
 - [x] Ajouter les métadonnées Open Graph, l’image d’aperçu de partage et l’URL canonique.
 - [x] Publier la première version sur Vercel et vérifier son fonctionnement sur téléphone.
+- [x] Effectuer une comparaison visuelle finale avec les maquettes sur mobile et desktop.
+- [x] Calculer le contraste de 13 principales paires de couleurs et vérifier la navigation au clavier, les textes alternatifs et les liens dans les deux thèmes.
+- [x] Préciser le nom accessible des liens « Code source » avec le titre du projet, par exemple « Code source de Morpion », en conservant le texte visible.
+- [x] Tester la carte de partage avec un outil d’inspection après déploiement.
+- [x] Centraliser les espacements, tailles de texte, polices, arrondis et dimensions communes dans des variables CSS.
+- [x] Regrouper les règles partagées des sections, descriptions et boutons dans une feuille CSS commune.
 
 ### À faire
 
 - [ ] Préciser, si nécessaire, le niveau d’autonomie associé aux compétences présentées.
-- [x] Centraliser les espacements, tailles de texte, polices, arrondis et dimensions communes dans des variables CSS.
-- [x] Regrouper les règles partagées des sections, descriptions et boutons dans une feuille CSS commune.
 - [ ] Ajouter des captures des autres projets lorsqu’elles sont disponibles.
-- [ ] Effectuer une comparaison visuelle finale avec les maquettes sur mobile et desktop.
-- [ ] Vérifier les contrastes, la navigation au clavier, les textes alternatifs et les liens dans les deux thèmes.
-- [ ] Tester la carte de partage avec un outil d’inspection après déploiement.
 
 Pour actualiser cette liste directement sur GitHub, remplacer `[ ]` par `[x]` lorsqu’une tâche est terminée.
 

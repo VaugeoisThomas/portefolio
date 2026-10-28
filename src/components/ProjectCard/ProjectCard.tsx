@@ -26,7 +26,7 @@ function ProjectCard({ project }: Readonly<ProjectCardProps>) {
                 )}
                 <p className='project-card-learning'>{project.learning}</p>
                 {project.sourceUrl && (
-                    <a href={project.sourceUrl} className='project-card-source'>Code source</a>
+                    <a href={project.sourceUrl} className='project-card-source' aria-label={`Code source de ${project.title}`}>Code source</a>
                 )}
             </div>
         </article>
