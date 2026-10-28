@@ -43,6 +43,8 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [x] Créer une carte réutilisable et un catalogue de six projets.
 - [x] Distinguer les projets mis en avant des projets secondaires.
 - [x] Intégrer la capture de Groupomania.
+- [x] Ajouter les liens vérifiés vers les dépôts des six projets.
+- [x] Ajouter une capture de Morpion et actualiser sa présentation et ses apprentissages.
 - [x] Ajouter une note de transparence aux projets avec une icône d’information.
 - [x] Construire la section **À propos** avec un portrait, un texte personnel et les valeurs de persévérance, d’esprit d’équipe et d’envie d’apprendre.
 - [x] Construire la section **Compétences** avec trois groupes, leurs icônes et descriptions, et une disposition responsive.
@@ -59,8 +61,7 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [ ] Préciser, si nécessaire, le niveau d’autonomie associé aux compétences présentées.
 - [x] Centraliser les espacements, tailles de texte, polices, arrondis et dimensions communes dans des variables CSS.
 - [x] Regrouper les règles partagées des sections, descriptions et boutons dans une feuille CSS commune.
-- [ ] Compléter les liens vers les dépôts après vérification de leurs adresses.
-- [ ] Ajouter les captures manquantes lorsqu’elles sont disponibles, notamment celle de Morpion.
+- [ ] Ajouter des captures des autres projets lorsqu’elles sont disponibles.
 - [ ] Effectuer une comparaison visuelle finale avec les maquettes sur mobile et desktop.
 - [ ] Vérifier les contrastes, la navigation au clavier, les textes alternatifs et les liens dans les deux thèmes.
 - [ ] Ajouter les métadonnées et l’image d’aperçu de partage, ainsi que l’URL canonique.
@@ -72,11 +73,11 @@ Pour actualiser cette liste directement sur GitHub, remplacer `[ ]` par `[x]` lo
 | Projet | Contexte | Présentation |
 | --- | --- | --- |
 | Groupomania | Fin de formation — interface et serveur développés | Mis en avant, avec capture et lien vers le dépôt |
-| Morpion | Projet personnel accompagné par l’IA | Mis en avant |
-| Ohmyfood | Formation — intégration HTML et Sass | Carte compacte |
-| Orinoco | Formation — communication entre site et serveur | Carte compacte |
-| SoPekocko | Formation — routes d’API ; interface Angular fournie | Carte compacte |
-| La Chouette Agence | Formation — améliorations du référencement naturel | Carte compacte |
+| Morpion | Projet personnel accompagné par l’IA | Mis en avant, avec capture d’une partie contre l’ordinateur et lien vers le dépôt |
+| Ohmyfood | Formation — intégration HTML et Sass | Carte compacte avec lien vers le dépôt |
+| Orinoco | Formation — communication entre site et serveur | Carte compacte avec lien vers le dépôt |
+| SoPekocko | Formation — routes d’API ; interface Angular fournie | Carte compacte avec lien vers le dépôt |
+| La Chouette Agence | Formation — améliorations du référencement naturel | Carte compacte avec lien vers le dépôt |
 
 Les descriptions précisent les contributions et les apprentissages. Pour Morpion, l’accompagnement par l’IA et la réalisation directe de certaines parties techniques par celle-ci sont explicitement mentionnés.
 

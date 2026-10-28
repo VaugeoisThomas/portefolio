@@ -1,4 +1,5 @@
 import groupomaniaPrint from "../../assets/PrintScreenFromGroupomania.png";
+import morpionPrint from "../../assets/morpion-game.png";
 
 export type Project = {
   id: string;
@@ -37,10 +38,15 @@ export const projects: Project[] = [
     title: "Morpion",
     category: "Projet personnel",
     description:
-      "Jeu conçu pour partager des parties entre amis et pratiquer le développement web. Développement accompagné par l'IA, qui a directement réalisé certaines parties techniques.",
-    technologies: ["React", "TypeScript", "Vite"],
+      "Jeu de morpion proposant des parties contre l’ordinateur et des salles multijoueurs en temps réel, avec profils et historique des parties. Projet développé avec l’assistance de l’IA, qui a directement réalisé certaines parties techniques.",
+    technologies: ["React", "TypeScript", "Vite", "Supabase", "Vitest"],
     learning:
-      "Pratiquer le découpage d'une interface en composants réutilisables, les tests et un parcours Git avec branches et pull requests.",
+      "Approfondir progressivement les composants React, le CSS responsive, la logique du jeu, les échanges avec Supabase et les tests, avec un accompagnement pour comprendre et vérifier les changements.",
+    sourceUrl: "https://github.com/VaugeoisThomas/morpion",
+    img: {
+      src: morpionPrint,
+      alt: "Partie de Morpion contre l'ordinateur, avec une grille contenant des croix bleues et des ronds roses.",
+    },
     featured: true,
   },
   {
@@ -52,6 +58,7 @@ export const projects: Project[] = [
     technologies: ["HTML", "Sass"],
     learning:
       "Organiser les styles pour les rendre plus lisibles et plus faciles à maintenir.",
+    sourceUrl: "https://github.com/VaugeoisThomas/ohmyfood",
     featured: false,
   },
   {
@@ -63,6 +70,7 @@ export const projects: Project[] = [
     technologies: ["Sass", "Node.js"],
     learning:
       "Faire communiquer le site avec le serveur et traiter des requêtes.",
+    sourceUrl: "https://github.com/VaugeoisThomas/Orinoco",
     featured: false,
   },
   {
@@ -74,6 +82,7 @@ export const projects: Project[] = [
     technologies: ["Express"],
     learning:
       "Organiser les routes d'une API et traiter les requêtes liées aux utilisateurs et aux données.",
+    sourceUrl: "https://github.com/VaugeoisThomas/SoPekocko_p6",
     featured: false,
   },
   {
@@ -85,6 +94,7 @@ export const projects: Project[] = [
     technologies: [],
     learning:
       "Utiliser des audits pour identifier des améliorations et vérifier les corrections apportées à un site.",
+    sourceUrl: "https://github.com/VaugeoisThomas/LaChouetteAgence",
     featured: false,
   },
 ];
