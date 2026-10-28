@@ -54,6 +54,7 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [x] Construire la section **Contact** avec les coordonnées et liens confirmés.
 - [x] Ajouter le pied de page responsive.
 - [x] Personnaliser le titre, la description du document et la favicon.
+- [x] Ajouter les métadonnées Open Graph, l’image d’aperçu de partage et l’URL canonique.
 - [x] Publier la première version sur Vercel et vérifier son fonctionnement sur téléphone.
 
 ### À faire
@@ -64,7 +65,7 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [ ] Ajouter des captures des autres projets lorsqu’elles sont disponibles.
 - [ ] Effectuer une comparaison visuelle finale avec les maquettes sur mobile et desktop.
 - [ ] Vérifier les contrastes, la navigation au clavier, les textes alternatifs et les liens dans les deux thèmes.
-- [ ] Ajouter les métadonnées et l’image d’aperçu de partage, ainsi que l’URL canonique.
+- [ ] Tester la carte de partage avec un outil d’inspection après déploiement.
 
 Pour actualiser cette liste directement sur GitHub, remplacer `[ ]` par `[x]` lorsqu’une tâche est terminée.
 
@@ -132,8 +133,9 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | `src/components/Background/` | Présentation du parcours, encadré professionnel et frise responsive |
 | `src/components/Contact/` | Coordonnées, bouton email et liens vers les réseaux professionnels |
 | `src/components/Footer/` | Pied de page et liens GitHub et LinkedIn |
-| `index.html` | Langue, titre, description et lien vers la favicon |
+| `index.html` | Langue, titre, description, favicon, URL canonique et métadonnées Open Graph |
 | `public/favicon.svg` | Favicon personnalisée du portfolio |
+| `public/social-preview.png` | Image utilisée dans les aperçus de partage |
 | `src/assets/` | Portrait, captures et fichiers SVG |
 | `public/cv-thomas-vaugeois.pdf` | CV proposé au téléchargement |
 
