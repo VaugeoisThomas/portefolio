@@ -17,19 +17,6 @@
   font-size: var(--section-title-size-mobile);
 }
 
-/* Paragraphes descriptifs de même présentation. */
-
-.projects-description,
-.project-card-description,
-.skills-description,
-.skills-group-description,
-.background-description,
-.background-step-description {
-  font-size: var(--text-body);
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-}
-
 /* Les seuils restent explicites : var() ne s’utilise pas dans une media query. */
 
 @media (min-width: 80rem) {
