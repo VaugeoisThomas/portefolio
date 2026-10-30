@@ -1,4 +1,5 @@
 import info from '../../assets/info.svg';
+import Description from '../Description/Description';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './Projects.css';
 import { projects } from './Projects.data';
@@ -15,10 +16,10 @@ function Projects() {
                     <p className="section-label projects-label">01 / Projets sélectionnés</p>
                     <h2 id="projects-title" className='projects-title'>Apprendre. Construire. Affiner.</h2>
                 </div>
-                <p className='projects-description'>
+                <Description>
                     De l'intégration HTML et Sass aux applications avec interface, serveur et base de données,
                     ces projets de formation et personnels illustrent mon parcours dans le développement web.
-                </p>
+                </Description>
             </header>
             <div className='projects-list'>
                 {featuredProjects.map(project => (

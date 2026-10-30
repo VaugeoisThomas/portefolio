@@ -8,7 +8,6 @@ type ActionLinkProps = ComponentPropsWithoutRef<'a'> & {
 }
 
 /** Affiche un lien d'action avec une variante et une icône facultative. */
-
 function ActionLink({
     children,
     variant = 'secondary',
