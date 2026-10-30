@@ -18,7 +18,9 @@ function Skills() {
                 {skillGroups.map(skill => (
                     <article className="skills-group" key={skill.id}>
                         <div className="skills-group-heading">
-                            <img src={skill.icon} alt="" />
+                            <span className="skills-group-icon">
+                                <img src={skill.icon} alt="" />
+                            </span>
                             <h3>{skill.title}</h3>
                         </div>
                         <p className='skills-group-description'>{skill.description}</p>

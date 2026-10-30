@@ -1,3 +1,8 @@
+/* Sépare visuellement les compétences du parcours. */
+.background {
+  border-top: 1px solid var(--color-border);
+}
+
 .background-header {
   display: grid;
   gap: var(--space-4);
@@ -94,7 +99,7 @@
 @media (min-width: 80rem) {
   .background {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+    grid-template-columns: minmax(0, 360fr) minmax(0, 800fr);
     gap: 7.5rem;
     align-items: start;
   }
