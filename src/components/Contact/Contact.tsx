@@ -1,6 +1,7 @@
 import arrowUpRight from '../../assets/arrow-up-right.svg';
 import github from '../../assets/github.svg';
 import linkedIn from '../../assets/linkedin.svg';
+import ActionLink from '../ActionLink/ActionLink';
 import './Contact.css';
 
 /** Affiche le moyen de contact */
@@ -21,16 +22,22 @@ function Contact() {
                             Contactez-moi.
                         </p>
                         <div className="contact-links">
-                            <a href="mailto:vaugeois.thomas@gmail.com">
+                            <ActionLink
+                                href="mailto:vaugeois.thomas@gmail.com"
+                                variant="light"
+                                icon={arrowUpRight}
+                            >
                                 Écrivez-moi
-                                <img src={arrowUpRight} alt='' />
-                            </a>
+                            </ActionLink>
                         </div>
                     </div>
                 </div>
                 <div className="contact-bottom">
-                    <a href="mailto:vaugeois.thomas@gmail.com" className='contact-email'>vaugeois.thomas@gmail.com
-                        <img src={arrowUpRight} alt='' />
+                    <a
+                        href="mailto:vaugeois.thomas@gmail.com" className='contact-email'
+                    >
+                        vaugeois.thomas@gmail.com
+                        <img src={arrowUpRight} alt="" />
                     </a>
                     <nav className="contact-socials" aria-label='Réseaux professionnels'>
                         <a href="https://github.com/VaugeoisThomas" target='_blank' rel="noopener noreferrer">

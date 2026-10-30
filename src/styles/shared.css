@@ -30,19 +30,6 @@
   color: var(--color-text-secondary);
 }
 
-/* Base des liens présentés comme des boutons. */
-
-.intro-actions a,
-.contact-links a {
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--action-min-height);
-  padding: var(--space-3) var(--space-5);
-  border-radius: var(--radius-action);
-  font-weight: 600;
-  text-decoration: none;
-}
-
 /* Les seuils restent explicites : var() ne s’utilise pas dans une media query. */
 
 @media (min-width: 80rem) {
