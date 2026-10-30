@@ -1,4 +1,6 @@
+import Description from '../Description/Description';
 import type { Project } from '../Projects/Projects.data';
+
 import './ProjectCard.css';
 
 type ProjectCardProps = {
@@ -16,7 +18,7 @@ function ProjectCard({ project }: Readonly<ProjectCardProps>) {
             <div className="project-card-content">
                 <p className='project-card-category'>{project.category}</p>
                 <h3 className='project-card-title'>{project.title}</h3>
-                <p className='project-card-description'>{project.description}</p>
+                <Description>{project.description}</Description>
                 {project.technologies.length > 0 && (
                     <ul className="project-card-technologies">
                         {project.technologies.map(technology => (
