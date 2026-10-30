@@ -2,6 +2,7 @@ import arrowDown from '../../assets/arrow-down.svg';
 import arrowUpRight from '../../assets/arrow-up-right.svg';
 import mapPin from '../../assets/map-pin.svg';
 import statusDot from '../../assets/status-dot.svg';
+import ActionLink from '../ActionLink/ActionLink';
 import IntroVisual from '../IntroVisual/IntroVisual';
 import './Intro.css';
 
@@ -31,17 +32,20 @@ function Intro() {
                     progresser.
                 </p>
                 <div className="intro-actions">
-                    <a href="#projects" className='intro-action-primary'>
+                    <ActionLink
+                        href="#projects"
+                        variant="primary"
+                        icon={arrowDown}
+                    >
                         Découvrir mes projets
-                        <img src={arrowDown} alt="" />
-                    </a>
-                    <a
+                    </ActionLink>
+                    <ActionLink
                         href={`${import.meta.env.BASE_URL}cv-thomas-vaugeois.pdf`}
                         download
+                        icon={arrowUpRight}
                     >
                         Télécharger mon CV (PDF)
-                        <img src={arrowUpRight} alt='' />
-                    </a>
+                    </ActionLink>
                 </div>
             </div>
             <IntroVisual />

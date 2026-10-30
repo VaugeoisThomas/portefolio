@@ -93,7 +93,8 @@
   width: 1.25rem;
   height: 2px;
   background: currentColor;
-  box-shadow: 0 -6px 0 currentColor,
+  box-shadow:
+    0 -6px 0 currentColor,
     0 6px 0 currentColor;
 }
 
@@ -150,19 +151,5 @@
 
   .header-contact {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: var(--action-min-height);
-    padding: var(--space-3) var(--space-5);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-action);
-    font-size: var(--text-body);
-    gap: var(--space-4);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .header-contact img {
-    filter: invert(1);
   }
 }

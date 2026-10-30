@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import arrowUpRight from '../../assets/arrow-up-right.svg';
+import ActionLink from '../ActionLink/ActionLink';
 import './Header.css';
 
 const navigationLinks = [
@@ -39,10 +40,13 @@ function Header() {
                     ))}
                 </ul>
             </nav>
-            <a href="#contact" className="header-contact">
+            <ActionLink
+                href="#contact"
+                icon={arrowUpRight}
+                className="header-contact"
+            >
                 Parlons ensemble
-                <img src={arrowUpRight} alt='' />
-            </a>
+            </ActionLink>
         </header>
     )
 }
