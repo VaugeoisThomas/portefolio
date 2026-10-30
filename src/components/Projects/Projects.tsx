@@ -1,12 +1,12 @@
 import info from '../../assets/info.svg';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './Projects.css';
-import { projects } from './Projects.data';
+import { selectedProjects } from './Projects.data';
 
 /** Présente une sélection de mes projets. */
 function Projects() {
-    const featuredProjects = projects.filter(project => project.featured);
-    const otherProjects = projects.filter(project => !project.featured);
+    const featuredProjects = selectedProjects.filter(project => project.featured);
+    const otherProjects = selectedProjects.filter(project => !project.featured);
 
     return (
         <section id="projects" className="projects" aria-labelledby="projects-title">

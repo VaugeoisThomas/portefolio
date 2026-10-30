@@ -9,7 +9,7 @@ type ProjectCardProps = {
 function ProjectCard({ project }: Readonly<ProjectCardProps>) {
 
     return (
-        <article className={project.featured ? 'project-card' : 'project-card project-card-compact'}>
+        <article className={project.featured ? 'project-card project-card-featured' : 'project-card project-card-compact'}>
             {project.img && (
                 <img src={project.img.src} alt={project.img.alt} className='project-card-image' />
             )}

@@ -56,6 +56,12 @@
   --color-border: #ded9e9;
   --color-about-background: #221a35;
 
+  /* Niveaux de pratique : couleurs complétées par des symboles. */
+  --color-skill-autonomous: #16733d;
+  --color-skill-guided: #2459b3;
+  --color-skill-review: #a3520a;
+  --color-skill-on-level: #ffffff;
+
   /* Espacements des sections : mobile, puis grand écran. */
   --section-padding-mobile: 4rem;
   --section-padding-desktop: 6rem;
@@ -80,6 +86,10 @@
     --color-accent-background: #332447;
     --color-surface: #24202e;
     --color-border: #443b54;
+    --color-skill-autonomous: #71d49b;
+    --color-skill-guided: #91baff;
+    --color-skill-review: #f2b36e;
+    --color-skill-on-level: #18151f;
   }
 }
 
