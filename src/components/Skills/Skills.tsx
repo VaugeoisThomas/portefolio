@@ -1,7 +1,9 @@
 import SkillBadge from '../SkillBadge/SkillBadge'
 import { skillLevelOrder, skillLevels } from '../SkillBadge/SkillBadge.data'
+import Description from '../Description/Description'
 import './Skills.css'
 import { skillGroups } from './Skills.data'
+
 
 /** Affiche les compétences de Thomas Vaugeois dans le domaine du développement web */
 function Skills() {
@@ -12,7 +14,7 @@ function Skills() {
                     <p className='section-label skills-label'>03 / Compétences</p>
                     <h2 id="skills-title" className='skills-title'>Une boîte à outils en mouvement.</h2>
                 </div>
-                <p className="skills-description">Des technologies pratiquées en formation et dans mes projets, avec des repères sur mon autonomie actuelle.</p>
+                <Description>Des technologies pratiquées en formation et dans mes projets, avec des repères sur mon autonomie actuelle.</Description>
             </header>
             <div className="skills-list">
                 {skillGroups.map(skill => (
@@ -21,7 +23,7 @@ function Skills() {
                             <img src={skill.icon} alt="" />
                             <h3>{skill.title}</h3>
                         </div>
-                        <p className='skills-group-description'>{skill.description}</p>
+                        <Description className='skills-group-description'>{skill.description}</Description>
                         <ul>
                             {skill.technologies.map(technologie => (
                                 <li key={technologie.name}>

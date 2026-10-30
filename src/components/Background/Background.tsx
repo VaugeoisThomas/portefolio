@@ -1,4 +1,5 @@
 import arrowUpRight from '../../assets/arrow-up-right.svg'
+import Description from '../Description/Description'
 import "./Background.css"
 import { backgroundSteps } from './Background.data'
 
@@ -11,9 +12,9 @@ function Background() {
                 <header className='background-header'>
                     <p className='section-label background-label'>04 / Mon parcours</p>
                     <h2 id="background-title" className='background-title'>Au début du chemin. Déjà en mouvement.</h2>
-                    <p className="background-description">
+                    <Description>
                         De l'informatique au développement web, un parcours guidé par la curiosité et l'envie d'apprendre.
-                    </p>
+                    </Description>
                 </header>
                 <p className="background-next-step">
                     <img src={arrowUpRight} alt="" />
@@ -26,7 +27,7 @@ function Background() {
                         <p className="background-period">{step.period}</p>
                         <h3>{step.title}</h3>
                         <p className="background-context">{step.context}</p>
-                        <p className='background-step-description'>{step.description}</p>
+                        <Description className='background-step-description'>{step.description}</Description>
                     </li>
                 ))}
             </ol>
