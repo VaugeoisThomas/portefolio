@@ -13,7 +13,7 @@ Le site présente mes projets, mon approche du développement web, mes compéten
 - Site statique sur une seule page, avec navigation vers les sections.
 - Mise en page mobile first et menu hamburger sur petit écran.
 - Thèmes clair et sombre selon les préférences du système.
-- Six projets : deux mis en avant et quatre sous une forme plus compacte.
+- Trois projets sélectionnés : Groupomania à la une, puis Morpion et AuroraIA.
 - Cartes générées à partir de données TypeScript ; images et liens de code source facultatifs.
 - CV téléchargeable au format PDF depuis le bouton « Télécharger mon CV (PDF) » de l’accueil.
 - Illustration décorative inspirée de VS Code, avec onglets statiques et code coloré.
@@ -62,10 +62,10 @@ Le portfolio ne nécessite ni serveur applicatif, ni base de données, ni servic
 - [x] Tester la carte de partage avec un outil d’inspection après déploiement.
 - [x] Centraliser les espacements, tailles de texte, polices, arrondis et dimensions communes dans des variables CSS.
 - [x] Regrouper les règles partagées des sections, descriptions et boutons dans une feuille CSS commune.
+- [x] Préciser la pratique de chaque technologie avec des pastilles colorées, des symboles distincts, une légende commune et des niveaux accessibles aux lecteurs d’écran.
 
 ### À faire
 
-- [ ] Préciser, si nécessaire, le niveau d’autonomie associé aux compétences présentées.
 - [ ] Ajouter des captures des autres projets lorsqu’elles sont disponibles.
 
 Pour actualiser cette liste directement sur GitHub, remplacer `[ ]` par `[x]` lorsqu’une tâche est terminée.
@@ -75,11 +75,10 @@ Pour actualiser cette liste directement sur GitHub, remplacer `[ ]` par `[x]` lo
 | Projet | Contexte | Présentation |
 | --- | --- | --- |
 | Groupomania | Fin de formation — interface et serveur développés | Mis en avant, avec capture et lien vers le dépôt |
-| Morpion | Projet personnel accompagné par l’IA | Mis en avant, avec capture d’une partie contre l’ordinateur et lien vers le dépôt |
-| Ohmyfood | Formation — intégration HTML et Sass | Carte compacte avec lien vers le dépôt |
-| Orinoco | Formation — communication entre site et serveur | Carte compacte avec lien vers le dépôt |
-| SoPekocko | Formation — routes d’API ; interface Angular fournie | Carte compacte avec lien vers le dépôt |
-| La Chouette Agence | Formation — améliorations du référencement naturel | Carte compacte avec lien vers le dépôt |
+| Morpion | Projet personnel accompagné par l’IA | Carte avec capture d’une partie contre l’ordinateur et lien vers le dépôt |
+| AuroraIA | Assistant personnel Python/Flask en développement | Capture de l’interface web ; dépôt privé, sans lien public vers le code |
+
+Les autres projets restent conservés dans le catalogue de données. AuroraIA utilise actuellement des réponses prédéfinies, sans modèle d’IA intégré.
 
 Les descriptions précisent les contributions et les apprentissages. Pour Morpion, l’accompagnement par l’IA et la réalisation directe de certaines parties techniques par celle-ci sont explicitement mentionnés.
 
@@ -128,8 +127,9 @@ Le dossier `dist/` est généré et n’est pas suivi par Git. La commande `prev
 | `src/components/Projects/` | En-tête et répartition des projets |
 | `src/components/ProjectCard/` | Carte réutilisable et ses styles |
 | `src/components/About/` | Portrait, présentation personnelle et valeurs |
-| `src/components/Skills/Skills.data.ts` | Groupes de compétences, descriptions, technologies et icônes |
+| `src/components/Skills/Skills.data.ts` | Groupes de compétences, technologies, niveaux de pratique, descriptions et icônes |
 | `src/components/Skills/` | Affichage des compétences et styles responsive |
+| `src/components/SkillBadge/` | Pastilles de niveau et définition commune des libellés et symboles de la légende |
 | `src/components/Background/Background.data.ts` | Périodes, titres, contextes et descriptions des étapes du parcours |
 | `src/components/Background/` | Présentation du parcours, encadré professionnel et frise responsive |
 | `src/components/Contact/` | Coordonnées, bouton email et liens vers les réseaux professionnels |

@@ -1,3 +1,4 @@
+import auroraPrint from "../../assets/aurora-ia.png";
 import groupomaniaPrint from "../../assets/PrintScreenFromGroupomania.png";
 import morpionPrint from "../../assets/morpion-game.png";
 
@@ -47,7 +48,22 @@ export const projects: Project[] = [
       src: morpionPrint,
       alt: "Partie de Morpion contre l'ordinateur, avec une grille contenant des croix bleues et des ronds roses.",
     },
-    featured: true,
+    featured: false,
+  },
+  {
+    id: "aurora-ia",
+    title: "AuroraIA",
+    category: "Projet personnel · En développement",
+    description:
+      "Assistant personnel développé progressivement en Python, avec une interface web reliée à une API Flask. Il répond actuellement à des commandes prédéfinies ; l’intégration d’un modèle d’IA est une évolution prévue.",
+    technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
+    learning:
+      "Apprendre Python, organiser une application en modules et relier une interface de conversation à une API HTTP.",
+    img: {
+      src: auroraPrint,
+      alt: "Interface bleu nuit d’AuroraIA avec message de bienvenue et formulaire de conversation.",
+    },
+    featured: false,
   },
   {
     id: "ohmyfood",
@@ -98,3 +114,8 @@ export const projects: Project[] = [
     featured: false,
   },
 ];
+
+/** Projets retenus pour la page ; les autres restent dans le catalogue. */
+export const selectedProjects = projects.filter(project =>
+  ["groupomania", "morpion", "aurora-ia"].includes(project.id)
+);
