@@ -30,6 +30,10 @@
   gap: 0.625rem;
 }
 
+.site-header .site-brand {
+  font-weight: 600;
+}
+
 .site-monogram {
   display: inline-flex;
   align-items: center;

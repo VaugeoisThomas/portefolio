@@ -19,11 +19,11 @@
 }
 
 .code-preview {
-  margin-top: var(--space-6);
-  border: 1px solid #3c3c3c;
+  margin-top: 1.5625rem;
+  border: 0;
   border-radius: 0.5rem;
-  background: #1e1e1e;
-  color: #d4d4d4;
+  background: #221a35;
+  color: #c0b4d6;
   overflow: hidden;
   box-shadow: var(--shadow-preview);
 }
@@ -31,40 +31,20 @@
 .code-preview-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 2rem;
-  padding: 0.375rem var(--space-3);
-  border-bottom: 1px solid #3c3c3c;
-  background: #323233;
-  color: #ccc;
+  gap: var(--space-3);
+  min-height: 2.4375rem;
+  padding: 0.375rem 0.875rem;
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  color: #c0b4d6;
+  font-family: var(--font-mono);
   font-size: var(--text-xs);
-}
-
-.code-preview-tabs {
-  display: flex;
-  background: #252526;
-}
-
-.code-preview-tab {
-  padding: 0.625rem 0.875rem;
-  border-top: 2px solid transparent;
-  border-right: 1px solid #252526;
-  background: #2d2d2d;
-  color: #969696;
-  font-size: var(--text-label);
-}
-
-.code-preview-tab-active {
-  border-top: 2px solid #007acc;
-  background: #1e1e1e;
-  color: #ffffff;
 }
 
 .code-preview-content {
   margin: 0;
   padding: 1.125rem;
   overflow-x: auto;
-  font-family: var(--font-code);
+  font-family: var(--font-mono);
   font-size: var(--text-xs);
   line-height: 2;
   counter-reset: code-line;
@@ -80,30 +60,30 @@
 }
 
 .code-preview-line::before {
-  content: counter(code-line);
+  content: counter(code-line, decimal-leading-zero);
   display: inline-block;
   width: 2ch;
   margin-right: 1.5ch;
-  color: #858585;
+  color: #786a8d;
   text-align: right;
 }
 
-/* Coloration statique inspirée du thème sombre de VS Code. */
+/* Palette de l’éditeur décoratif de la maquette, indépendante du thème du site. */
 
 .code-token-keyword {
-  color: #569cd6;
+  color: #b8a2f1;
 }
 
 .code-token-property {
-  color: #9cdcfe;
+  color: #d6eac5;
 }
 
 .code-token-string {
-  color: #ce9178;
+  color: #d6eac5;
 }
 
 .code-token-bracket {
-  color: #ffd700;
+  color: #b8a2f1;
 }
 
 .intro-visual-result {
@@ -185,6 +165,12 @@
     min-height: 29.375rem;
   }
 
+  .intro-visual-symbol {
+    right: 1.625rem;
+    bottom: 4.1875rem;
+    font-size: 6.75rem;
+  }
+
   .intro-visual-result-title {
     font-size: var(--text-lead);
   }
@@ -196,15 +182,18 @@
   .code-preview {
     max-width: 25.25rem;
     margin-left: var(--space-3);
-    margin-top: 2.8125rem;
+    margin-top: 2.9375rem;
   }
 
   .intro-visual-result {
     max-width: 22.125rem;
     margin-left: 3.875rem;
+    margin-top: 2.125rem;
+    padding: var(--space-6);
   }
 
   .code-preview-content {
+    padding: var(--space-6);
     font-size: var(--text-sm);
   }
 
@@ -213,6 +202,6 @@
   }
 
   .intro-orbit-second {
-    left: 120px;
+    left: 100px;
   }
 }
