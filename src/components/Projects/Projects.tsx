@@ -22,13 +22,13 @@ function Projects() {
                 </Description>
             </header>
             <div className='projects-list'>
-                {featuredProjects.map(project => (
-                    <ProjectCard project={project} key={project.id} />
+                {featuredProjects.map((project, index) => (
+                    <ProjectCard project={project} key={project.id} number={index + 1} />
                 ))}
             </div>
             <div className='projects-others'>
-                {otherProjects.map(project => (
-                    <ProjectCard project={project} key={project.id} />
+                {otherProjects.map((project, index) => (
+                    <ProjectCard project={project} key={project.id} number={featuredProjects.length + index + 1} />
                 ))}
             </div>
             <div className="projects-note">
