@@ -105,9 +105,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: var(--space-12);
   }
 
   .contact-email {
     font-size: 1.75rem;
+  }
+
+  .contact-message {
+    gap: var(--space-6);
   }
 }

@@ -1,6 +1,5 @@
 .footer {
   padding-block: var(--space-8);
-  border-top: 1px solid var(--color-border);
   color: var(--color-text-secondary);
 }
 
@@ -20,6 +19,29 @@
 .footer-links a {
   color: inherit;
   text-underline-offset: 0.2em;
+}
+
+.footer-identity {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.footer-identity p:first-child {
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-identity p:last-child {
+  font-size: var(--text-sm);
+}
+
+.footer-note {
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-6);
+  font-size: var(--text-caption);
+  line-height: 1.7;
 }
 
 @media (min-width: 48rem) {
