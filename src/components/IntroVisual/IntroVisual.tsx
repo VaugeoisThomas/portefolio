@@ -1,4 +1,5 @@
 import orbit from '../../assets/orbit.svg'
+import editorControls from '../../assets/editor-controls.svg'
 import sparkles from '../../assets/sparkles.svg'
 import statusDot from '../../assets/status-dot.svg'
 import "./IntroVisual.css"
@@ -18,11 +19,8 @@ function IntroVisual() {
             </p>
             <div className="code-preview">
                 <div className="code-preview-bar">
-                    <span>Visual Studio Code</span>
-                </div>
-                <div className="code-preview-tabs">
-                    <span className="code-preview-tab code-preview-tab-active">hello-world.tsx</span>
-                    <span className="code-preview-tab">hello-world.css</span>
+                    <img src={editorControls} alt="" />
+                    <span>hello-world.tsx</span>
                 </div>
                 <pre className="code-preview-content">
                     <code>

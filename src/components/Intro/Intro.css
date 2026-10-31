@@ -5,6 +5,7 @@
 
 .intro-content {
   max-width: 65ch;
+  min-width: 0;
 }
 
 .intro-content p + p {
@@ -39,7 +40,7 @@
   font-family: var(--font-mono);
   margin-bottom: var(--space-6);
   color: var(--color-primary);
-  font-size: var(--text-sm);
+  font-size: var(--text-label);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   display: flex;
@@ -48,6 +49,7 @@
 }
 
 .intro-description {
+  max-width: 33.75rem;
   color: var(--color-text-secondary);
   font-size: var(--text-lead);
   line-height: 1.7;
@@ -97,7 +99,20 @@
   .intro {
     grid-template-columns: minmax(0, 1fr) 30.625rem;
     align-items: center;
-    gap: 3.75rem;
+    column-gap: 3.75rem;
+    row-gap: 4.5rem;
+  }
+
+  .intro-content p + p {
+    margin-top: 0.625rem;
+  }
+
+  .intro-availability {
+    margin-bottom: 1.75rem;
+  }
+
+  .intro-actions {
+    margin-top: 1.75rem;
   }
 
   .intro-details-year {
