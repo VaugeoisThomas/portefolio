@@ -4,12 +4,20 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className='footer'>
-            <div className="footer-inner page-container">
-                <p>Thomas Vaugeois - Développeur web junior</p>
-                <nav className="footer-links" aria-label='Réseaux professionnels'>
-                    <a href="https://github.com/VaugeoisThomas" target='_blank' rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/thomasvaugeois/" target='_blank' rel="noopener noreferrer">LinkedIn</a>
-                </nav>
+            <div className="page-container">
+                <div className="footer-inner">
+                    <div className="footer-identity">
+                        <p>Thomas Vaugeois</p>
+                        <p>Développeur web junior</p>
+                    </div>
+                    <div className="footer-links">
+                        <p>&copy; {new Date().getFullYear()}</p>
+                        <a href="#home">Retour en haut ↑</a>
+                    </div>
+                </div>
+                <p className='footer-note'>
+                    Portefolio personnel développé avec React et TypeScript, à partir d'une maquette Figma adaptée à mon parcours.
+                </p>
             </div>
         </footer>
     )

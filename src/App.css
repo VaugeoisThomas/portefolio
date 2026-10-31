@@ -1,5 +1,5 @@
 main {
-  padding: 2.625rem 0;
+  padding-top: 2.625rem;
 }
 
 .page-container {
@@ -10,6 +10,6 @@ main {
 
 @media (min-width: 80rem) {
   main {
-    padding-block: 4.5rem;
+    padding-top: 4.5rem;
   }
 }
